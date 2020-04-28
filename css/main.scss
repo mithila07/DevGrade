@@ -117,9 +117,15 @@ h6 {
             z-index: -1;
 
             @media (min-width: 768px) {
-                height: calc(100% - 5rem);
-                top: 2.5rem;
-                bottom: 2.5rem;
+                height: calc(100% - 4rem);
+                top: 2rem;
+                bottom: 2rem;
+            }
+
+            @media (min-width: 1024px) {
+                height: calc(100% - 6rem);
+                top: 3rem;
+                bottom: 3rem;
             }
 
             @media (min-width: 1024px) {
