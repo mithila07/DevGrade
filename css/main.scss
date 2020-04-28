@@ -31,7 +31,7 @@ h6 {
 
 .main-header {
     position: relative;
-    background: url(/images/header-img.png) no-repeat center;
+    background: url(/DevGrade/images/header-img.png) no-repeat center;
     background-size: cover;
 
     @media (min-width: 768px) {
@@ -62,7 +62,7 @@ h6 {
     &::before {
         content: '';
         position: absolute;
-        background: url(/images/pattern.svg) no-repeat center;
+        background: url(/DevGrade/images/pattern.svg) no-repeat center;
         background-size: auto;
         top: -5rem;
         right: 0;
@@ -75,7 +75,7 @@ h6 {
     &::after {
         content: '';
         position: absolute;
-        background: url(/images/pattern.svg) no-repeat center;
+        background: url(/DevGrade/images/pattern.svg) no-repeat center;
         background-size: auto;
         bottom: 0;
         left: 0;
@@ -127,7 +127,7 @@ h6 {
         }
 
         .mobile-pic {
-            background: url(/images/ben-parker.png) no-repeat;
+            background: url(/DevGrade/images/ben-parker.png) no-repeat;
             background-size: cover;
             border-radius: 50%;
             width: 100px;
@@ -160,7 +160,7 @@ h6 {
 .cta-box {
 
     &__wrapper {
-        background: url(/images/cta-box-bg.svg) no-repeat center;
+        background: url(/DevGrade/images/cta-box-bg.svg) no-repeat center;
         background-size: cover;
     }
 }

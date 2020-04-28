@@ -32,7 +32,7 @@ h6 {
 
 .main-header {
   position: relative;
-  background: url(/images/header-img.png) no-repeat center;
+  background: url(/DevGrade/images/header-img.png) no-repeat center;
   background-size: cover;
 }
 
@@ -68,7 +68,7 @@ h6 {
 .what-we-do::before {
   content: '';
   position: absolute;
-  background: url(/images/pattern.svg) no-repeat center;
+  background: url(/DevGrade/images/pattern.svg) no-repeat center;
   background-size: auto;
   top: -5rem;
   right: 0;
@@ -81,7 +81,7 @@ h6 {
 .what-we-do::after {
   content: '';
   position: absolute;
-  background: url(/images/pattern.svg) no-repeat center;
+  background: url(/DevGrade/images/pattern.svg) no-repeat center;
   background-size: auto;
   bottom: 0;
   left: 0;
@@ -132,7 +132,7 @@ h6 {
 }
 
 .testimonial__wrapper .mobile-pic {
-  background: url(/images/ben-parker.png) no-repeat;
+  background: url(/DevGrade/images/ben-parker.png) no-repeat;
   background-size: cover;
   border-radius: 50%;
   width: 100px;
@@ -165,7 +165,7 @@ h6 {
 }
 
 .cta-box__wrapper {
-  background: url(/images/cta-box-bg.svg) no-repeat center;
+  background: url(/DevGrade/images/cta-box-bg.svg) no-repeat center;
   background-size: cover;
 }
 
