@@ -11,65 +11,67 @@
 
 <body>
 
-    <nav class="main-nav bg-gray-100 flex items-center justify-between flex-wrap px-10 pb-8 pt-4 md-pt-8 max-w-screen-xl mx-auto" id="main-nav">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <img class="w-32" src="/DevGrade/images/devgrade_logo.png" alt="logo">
-        </div>
-        <div class="relative w-full block md:hidden">
-            <input type="checkbox" id="nav-toggle" class="nav-toggle hidden">
-            <!-- Using the different states of the checkbox as an activator for the mobile menu - checked and not checked -->
-			<nav class="absolute bg-gray-100 w-full z-20 rounded-lg rounded-t-none border-t-4 border-indigo-700 shadow-md" id="menu">
-				<ul class="list-none text-center py-8">
-					<li class="pb-5"><a class="font-semibold text-lg" href="#">Home</a></li>
-					<li class="pb-5"><a class="font-semibold text-lg" href="#">Illustration</a></li>
-                    <li class="pb-5"><a class="font-semibold text-lg" href="#">Pricing</a></li>
-                    <li class="pb-5"><a class="font-semibold text-lg" href="#">Case studies</a></li>
-                    <li class="pb-5"><a class="font-semibold text-lg" href="#">Login</a></li>
-                    <li><a href="#"
-                        class="inline-block bg-indigo-700 text-lg px-6 py-3 leading-none rounded text-white hover:bg-indigo-400">Signup</a></li>
-				</ul>
-			</nav>
-			<label for="nav-toggle" class="nav-toggle-label">
-				<span></span>
-			</label>
-        </div>
-        <div class="hidden flex-grow md:flex md:items-center md:w-auto">
-            <div class="text-sm md:flex-grow flex items-center justify-end">
-                <div class="main-nav__menu flex items-center">
-                    <a href="#"
-                        class="block hover:text-indigo-400 mr-5 lg:mr-10">
-                        Home 
-                    </a>
-                    <a href="#"
-                        class="block hover:text-indigo-400 mr-5 lg:mr-10">
-                        Illustration
-                    </a>
-                    <a href="#" class="block hover:text-indigo-400 mr-5 lg:mr-10">
-                        Pricing
-                    </a>
-                    <a href="#" class="block hover:text-indigo-400 mr-5 lg:mr-10">
-                        Case studies
-                    </a>
-                    <a href="#" class="block hover:text-indigo-400 mr-5 lg:mr-10">
-                        Login
-                    </a>
-                    <a href="#"
-                        class="inline-block bg-indigo-700 text-sm px-6 py-3 leading-none rounded text-white hover:bg-indigo-400 mr-5 lg:mr-10">
-                        Signup
-                    </a>
-                </div>
-                <div class="main-nav__search-button">
-                    <span class="main-nav__search-button__icon block" data-selector="#main-nav"></span>
-                </div>
+    <nav class="main-nav bg-gray-100 flex px-10 pb-8 pt-4 md-pt-8" id="main-nav">
+        <div class="max-w-screen-xl mx-auto items-center justify-between flex-wrap">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <img class="w-32" src="/DevGrade/images/devgrade_logo.png" alt="logo">
             </div>
-            <form action="" class="main-nav__search-box">
-                <input type="text" class="main-nav__search-box__input outline-none" placeholder="Type here to search..." />
-            </form>
+            <div class="relative w-full block md:hidden">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle hidden">
+                <!-- Using the different states of the checkbox as an activator for the mobile menu - checked and not checked -->
+                <nav class="absolute bg-gray-100 w-full z-20 rounded-lg rounded-t-none border-t-4 border-indigo-700 shadow-md" id="menu">
+                    <ul class="list-none text-center py-8">
+                        <li class="pb-5"><a class="font-semibold text-lg" href="#">Home</a></li>
+                        <li class="pb-5"><a class="font-semibold text-lg" href="#">Illustration</a></li>
+                        <li class="pb-5"><a class="font-semibold text-lg" href="#">Pricing</a></li>
+                        <li class="pb-5"><a class="font-semibold text-lg" href="#">Case studies</a></li>
+                        <li class="pb-5"><a class="font-semibold text-lg" href="#">Login</a></li>
+                        <li><a href="#"
+                            class="inline-block bg-indigo-700 text-lg px-6 py-3 leading-none rounded text-white hover:bg-indigo-400">Signup</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+            </div>
+            <div class="hidden flex-grow md:flex md:items-center md:w-auto">
+                <div class="text-sm md:flex-grow flex items-center justify-end">
+                    <div class="main-nav__menu flex items-center">
+                        <a href="#"
+                            class="block hover:text-indigo-400 mr-5 lg:mr-10">
+                            Home 
+                        </a>
+                        <a href="#"
+                            class="block hover:text-indigo-400 mr-5 lg:mr-10">
+                            Illustration
+                        </a>
+                        <a href="#" class="block hover:text-indigo-400 mr-5 lg:mr-10">
+                            Pricing
+                        </a>
+                        <a href="#" class="block hover:text-indigo-400 mr-5 lg:mr-10">
+                            Case studies
+                        </a>
+                        <a href="#" class="block hover:text-indigo-400 mr-5 lg:mr-10">
+                            Login
+                        </a>
+                        <a href="#"
+                            class="inline-block bg-indigo-700 text-sm px-6 py-3 leading-none rounded text-white hover:bg-indigo-400 mr-5 lg:mr-10">
+                            Signup
+                        </a>
+                    </div>
+                    <div class="main-nav__search-button">
+                        <span class="main-nav__search-button__icon block" data-selector="#main-nav"></span>
+                    </div>
+                </div>
+                <form action="" class="main-nav__search-box">
+                    <input type="text" class="main-nav__search-box__input outline-none" placeholder="Type here to search..." />
+                </form>
+            </div>
         </div>
     </nav>
 
-    <section class="main-header h-auto flex flex-wrap px-10">
-        <div class="max-w-screen-xl mx-auto">
+    <section class="main-header h-auto px-10">
+        <div class="max-w-screen-xl mx-auto flex flex-wrap ">
             <div class="relative z-10 w-full md:w-1/2 pb-20 lg:pb-0 self-center">
                 <h1 class="text-gray-900 font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-tight pt-20 md:pt-0">
                     Automated fullstack<br>
