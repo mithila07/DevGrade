@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="20px" viewBox="0 0 41 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icon/navigation/arrow/right/24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="29.553125 1.946875 36.659375 9.0625 0.8125 9.0625 0.8125 10.9375 36.659375 10.9375 29.553125 18.053125 30.875 19.375 40.25 10 30.875 0.625"></polygon>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2" transform="translate(-294.000000, -1102.000000)">
+            <g id="icon/navigation/arrow/right/24" transform="translate(294.000000, 1102.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icon-color" fill="#7F9CF5" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

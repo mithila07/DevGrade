@@ -15,6 +15,7 @@ body {
     color: #4A5568;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 button,
@@ -31,11 +32,18 @@ h6 {
     font-family: 'Playfair Display', serif;
 }
 
-.mx-auto { margin: 0 auto; }
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
 
 .main-header {
     position: relative;
-    background: url(/DevGrade/images/header-img.png) no-repeat center;
+    background: url(../images/header-img.png) no-repeat center;
     background-size: cover;
 
     @media (min-width: 768px) {
@@ -49,14 +57,14 @@ h6 {
         right: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255,255,255,0.7);
+        background-color: rgba(255, 255, 255, 0.7);
         z-index: 0;
 
         @media (min-width: 768px) {
             background-color: #EDF2F7;
             width: 25%;
             height: 70%;
-        }        
+        }
     }
 }
 
@@ -66,7 +74,7 @@ h6 {
     &::before {
         content: '';
         position: absolute;
-        background: url(/DevGrade/images/pattern.svg) no-repeat center;
+        background: url(../images/pattern.svg) no-repeat center;
         background-size: auto;
         top: -5rem;
         right: 0;
@@ -79,7 +87,7 @@ h6 {
     &::after {
         content: '';
         position: absolute;
-        background: url(/DevGrade/images/pattern.svg) no-repeat center;
+        background: url(../images/pattern.svg) no-repeat center;
         background-size: auto;
         bottom: 0;
         left: 0;
@@ -96,7 +104,7 @@ h6 {
 }
 
 .down-arrow {
-    height: 0; 
+    height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 8px solid #000000;
@@ -137,7 +145,7 @@ h6 {
         }
 
         .mobile-pic {
-            background: url(/DevGrade/images/ben-parker.png) no-repeat;
+            background: url(../images/ben-parker.png) no-repeat;
             background-size: cover;
             border-radius: 50%;
             width: 100px;
@@ -170,116 +178,118 @@ h6 {
 .cta-box {
 
     &__wrapper {
-        background: url(/DevGrade/images/cta-box-bg.svg) no-repeat center;
+        background: url(../images/cta-box-bg.svg) no-repeat center;
         background-size: cover;
     }
 }
 
 .nav-toggle-label {
-	position: absolute;
-	top: -1rem;
-	right: 0;
-	height: 100%;
-	display: flex;
-	align-items: center;
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-	display: block;
-	background: #1A202C;
-	height: 3px;
-	width: 30px;
-	border-radius: 2px;
-	position: relative;
-	transition: all .5s ease-in-out;
+    display: block;
+    background: #1A202C;
+    height: 3px;
+    width: 30px;
+    border-radius: 2px;
+    position: relative;
+    transition: all .5s ease-in-out;
 }
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-	content: '';
-	position: absolute;
+    content: '';
+    position: absolute;
 }
 
 .nav-toggle-label span::before {
-	bottom: 10px;
+    bottom: 10px;
 }
+
 .nav-toggle-label span::after {
-	top: 10px;
+    top: 10px;
 }
 
-#nav-toggle:checked ~ .nav-toggle-label span {
-	background: #F7FAFC; 
+#nav-toggle:checked~.nav-toggle-label span {
+    background: #F7FAFC;
 }
 
-#nav-toggle:checked ~ .nav-toggle-label span::before {
-	transform: rotate(45deg);
-	bottom: 0;
-	background: #1A202C;
+#nav-toggle:checked~.nav-toggle-label span::before {
+    transform: rotate(45deg);
+    bottom: 0;
+    background: #1A202C;
 }
 
-#nav-toggle:checked ~ .nav-toggle-label span::after {
-	transform: rotate(-45deg);
-	top: 0;
-	background: #1A202C;
+#nav-toggle:checked~.nav-toggle-label span::after {
+    transform: rotate(-45deg);
+    top: 0;
+    background: #1A202C;
 }
 
 #menu {
-	top: 2rem;
-	left: 0;
-	transform: scale(1, 0);
-	transform-origin: top; 
+    top: 2rem;
+    left: 0;
+    transform: scale(1, 0);
+    transform-origin: top;
     transition: transform .4s ease-in-out;
 }
 
-#nav-toggle:checked + #menu {
-	transform: scale(1, 1);
+#nav-toggle:checked+#menu {
+    transform: scale(1, 1);
 }
-#nav-toggle:checked ~ #menu a {
+
+#nav-toggle:checked~#menu a {
     opacity: 1;
-	transition: opacity .25s ease-in-out .35s;
+    transition: opacity .25s ease-in-out .35s;
 }
 
 
 
 .main-nav {
 
-	&__menu {
+    &__menu {
 
-		a {
-			opacity: 1;
-			transition: transform 0.3s, opacity 0.2s 0.1s;
+        a {
+            opacity: 1;
+            transition: transform 0.3s, opacity 0.2s 0.1s;
 
             $time-offset: 0.3;
-            
-			@for $i from 1 through 5 {
 
-				&:nth-child(#{$i}) {
-					$time-offset: $time-offset + 0.1;
-					transition-delay: #{$time-offset}s;
-				}
-			}
-		}
-	}
+            @for $i from 1 through 5 {
 
-	&__search-box {
-		position: absolute;
+                &:nth-child(#{$i}) {
+                    $time-offset: $time-offset + 0.1;
+                    transition-delay: #{$time-offset}s;
+                }
+            }
+        }
+    }
+
+    &__search-box {
+        position: absolute;
         left: 0;
         width: 0;
-		
-		transform: translateX(20%);
-		opacity: 0;
-		transition: all 0.4s 0.3s;
 
-		&__input {
-			border: 0;
-			width: 100%;
+        transform: translateX(20%);
+        opacity: 0;
+        transition: all 0.4s 0.3s;
+
+        &__input {
+            border: 0;
+            width: 100%;
             height: 100%;
-			background-color: transparent;
-		}
+            background-color: transparent;
+        }
     }
-    
+
     &__search-button {
 
         &__icon {
@@ -293,16 +303,16 @@ h6 {
         }
     }
 
-	&.show {
+    &.show {
 
-		.main-nav__menu {
+        .main-nav__menu {
 
-			a {
-				transform: scale(0.8);
-				opacity: 0;
-			}
+            a {
+                transform: scale(0.8);
+                opacity: 0;
+            }
         }
-        
+
         .main-nav__search-button {
 
             &__icon {
@@ -315,15 +325,114 @@ h6 {
             }
         }
 
-		.main-nav__search-box {
-			width: calc(100% - 5em);
-			transform: translateX(0);
+        .main-nav__search-box {
+            width: calc(100% - 5em);
+            transform: translateX(0);
             opacity: 1;
             padding-left: 20rem;
 
             @media (min-width: 1024px) {
                 padding-left: 45rem;
             }
-		}
-	}
+        }
+    }
+}
+
+.inner-header {
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: url(../images/pattern.svg) no-repeat center;
+        background-size: auto;
+        bottom: 0;
+        left: 0;
+        width: 15rem;
+        height: 20rem;
+        z-index: 1;
+        opacity: 0.5;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: url(../images/pattern.svg) no-repeat center;
+        background-size: auto;
+        bottom: 0;
+        right: 0;
+        width: 25rem;
+        height: 5rem;
+        z-index: 1;
+        opacity: 0.5;
+    }
+}
+
+//tabs
+
+.illustration-tabs {
+
+    @media (min-width: 768px) {
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            background-color: #CBD5E0;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 5.8rem;
+        }
+    }
+}
+
+.dev-tabs {
+
+    &__title {
+        transition: 0.15s all linear;
+
+        @media (min-width: 768px) {
+            float: left;
+        }
+
+        &.active {
+            font-weight: 700;
+            border-bottom: 2px solid #5A67D8;
+            color: #1A202C;
+
+            + .dev-tabs__content {
+                display: block;
+
+                @media (min-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    &__content {
+        display: none;
+    }
+
+    &__placeholder {
+        display: none;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: url(../images/pattern.svg) no-repeat center;
+            background-size: auto;
+            bottom: 0;
+            right: 11rem;
+            width: 15rem;
+            height: 10rem;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        @media (min-width: 768px) {
+            clear: both;
+            display: block;
+        }
+    }
 }
